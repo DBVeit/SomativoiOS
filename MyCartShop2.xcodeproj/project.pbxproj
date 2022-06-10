@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		576B7B6028346E6D003CD16E /* MyCartShop2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B7B5F28346E6D003CD16E /* MyCartShop2App.swift */; };
+		576B7B6228346E6D003CD16E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B7B6128346E6D003CD16E /* ContentView.swift */; };
+		576B7B6428346E71003CD16E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 576B7B6328346E71003CD16E /* Assets.xcassets */; };
+		576B7B6728346E71003CD16E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 576B7B6628346E71003CD16E /* Preview Assets.xcassets */; };
+		576B7B6F28346F08003CD16E /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 576B7B6E28346F08003CD16E /* SQLite */; };
+		576B7B7128346F75003CD16E /* CartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B7B7028346F75003CD16E /* CartModel.swift */; };
+		576B7B7328347125003CD16E /* DB_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B7B7228347125003CD16E /* DB_Manager.swift */; };
+		576B7B752834752A003CD16E /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B7B742834752A003CD16E /* AddItemView.swift */; };
+		57A75C09283EFA520059B794 /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = 57A75C08283EFA520059B794 /* SwiftUIFontIcon */; };
+		57A75C0C283EFCD80059B794 /* FASwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 57A75C0B283EFCD80059B794 /* FASwiftUI */; };
+		57BA542828405131002AE984 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 57BA542728405131002AE984 /* PopupView */; };
+		57E1F67E2835C314002FB849 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E1F67D2835C314002FB849 /* EditItemView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		576B7B5C28346E6D003CD16E /* MyCartShop2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCartShop2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		576B7B5F28346E6D003CD16E /* MyCartShop2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCartShop2App.swift; sourceTree = "<group>"; };
+		576B7B6128346E6D003CD16E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		576B7B6328346E71003CD16E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		576B7B6628346E71003CD16E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		576B7B7028346F75003CD16E /* CartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartModel.swift; sourceTree = "<group>"; };
+		576B7B7228347125003CD16E /* DB_Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB_Manager.swift; sourceTree = "<group>"; };
+		576B7B742834752A003CD16E /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+		57E1F67D2835C314002FB849 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		576B7B5928346E6D003CD16E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57BA542828405131002AE984 /* PopupView in Frameworks */,
+				57A75C09283EFA520059B794 /* SwiftUIFontIcon in Frameworks */,
+				576B7B6F28346F08003CD16E /* SQLite in Frameworks */,
+				57A75C0C283EFCD80059B794 /* FASwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		576B7B5328346E6D003CD16E = {
+			isa = PBXGroup;
+			children = (
+				576B7B5E28346E6D003CD16E /* MyCartShop2 */,
+				576B7B5D28346E6D003CD16E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		576B7B5D28346E6D003CD16E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				576B7B5C28346E6D003CD16E /* MyCartShop2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		576B7B5E28346E6D003CD16E /* MyCartShop2 */ = {
+			isa = PBXGroup;
+			children = (
+				576B7B5F28346E6D003CD16E /* MyCartShop2App.swift */,
+				576B7B6128346E6D003CD16E /* ContentView.swift */,
+				576B7B6328346E71003CD16E /* Assets.xcassets */,
+				576B7B6528346E71003CD16E /* Preview Content */,
+				576B7B7028346F75003CD16E /* CartModel.swift */,
+				576B7B7228347125003CD16E /* DB_Manager.swift */,
+				576B7B742834752A003CD16E /* AddItemView.swift */,
+				57E1F67D2835C314002FB849 /* EditItemView.swift */,
+			);
+			path = MyCartShop2;
+			sourceTree = "<group>";
+		};
+		576B7B6528346E71003CD16E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				576B7B6628346E71003CD16E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		576B7B5B28346E6D003CD16E /* MyCartShop2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 576B7B6A28346E71003CD16E /* Build configuration list for PBXNativeTarget "MyCartShop2" */;
+			buildPhases = (
+				576B7B5828346E6D003CD16E /* Sources */,
+				576B7B5928346E6D003CD16E /* Frameworks */,
+				576B7B5A28346E6D003CD16E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCartShop2;
+			packageProductDependencies = (
+				576B7B6E28346F08003CD16E /* SQLite */,
+				57A75C08283EFA520059B794 /* SwiftUIFontIcon */,
+				57A75C0B283EFCD80059B794 /* FASwiftUI */,
+				57BA542728405131002AE984 /* PopupView */,
+			);
+			productName = MyCartShop2;
+			productReference = 576B7B5C28346E6D003CD16E /* MyCartShop2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		576B7B5428346E6D003CD16E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					576B7B5B28346E6D003CD16E = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 576B7B5728346E6D003CD16E /* Build configuration list for PBXProject "MyCartShop2" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 576B7B5328346E6D003CD16E;
+			packageReferences = (
+				576B7B6D28346F08003CD16E /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+				57A75C07283EFA520059B794 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */,
+				57A75C0A283EFCD80059B794 /* XCRemoteSwiftPackageReference "FASwiftUI" */,
+				57BA542628405131002AE984 /* XCRemoteSwiftPackageReference "PopupView" */,
+			);
+			productRefGroup = 576B7B5D28346E6D003CD16E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				576B7B5B28346E6D003CD16E /* MyCartShop2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		576B7B5A28346E6D003CD16E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576B7B6728346E71003CD16E /* Preview Assets.xcassets in Resources */,
+				576B7B6428346E71003CD16E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		576B7B5828346E6D003CD16E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576B7B7128346F75003CD16E /* CartModel.swift in Sources */,
+				576B7B6228346E6D003CD16E /* ContentView.swift in Sources */,
+				576B7B6028346E6D003CD16E /* MyCartShop2App.swift in Sources */,
+				576B7B7328347125003CD16E /* DB_Manager.swift in Sources */,
+				576B7B752834752A003CD16E /* AddItemView.swift in Sources */,
+				57E1F67E2835C314002FB849 /* EditItemView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		576B7B6828346E71003CD16E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		576B7B6928346E71003CD16E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		576B7B6B28346E71003CD16E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyCartShop2/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PUC.MyCartShop2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		576B7B6C28346E71003CD16E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyCartShop2/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PUC.MyCartShop2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		576B7B5728346E6D003CD16E /* Build configuration list for PBXProject "MyCartShop2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				576B7B6828346E71003CD16E /* Debug */,
+				576B7B6928346E71003CD16E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		576B7B6A28346E71003CD16E /* Build configuration list for PBXNativeTarget "MyCartShop2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				576B7B6B28346E71003CD16E /* Debug */,
+				576B7B6C28346E71003CD16E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		576B7B6D28346F08003CD16E /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		57A75C07283EFA520059B794 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huybuidac/SwiftUIFontIcon.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		57A75C0A283EFCD80059B794 /* XCRemoteSwiftPackageReference "FASwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mattmaddux/FASwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		57BA542628405131002AE984 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		576B7B6E28346F08003CD16E /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 576B7B6D28346F08003CD16E /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+		57A75C08283EFA520059B794 /* SwiftUIFontIcon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57A75C07283EFA520059B794 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */;
+			productName = SwiftUIFontIcon;
+		};
+		57A75C0B283EFCD80059B794 /* FASwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57A75C0A283EFCD80059B794 /* XCRemoteSwiftPackageReference "FASwiftUI" */;
+			productName = FASwiftUI;
+		};
+		57BA542728405131002AE984 /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57BA542628405131002AE984 /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 576B7B5428346E6D003CD16E /* Project object */;
+}
